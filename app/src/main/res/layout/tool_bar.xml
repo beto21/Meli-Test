@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/search_menu_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/menu_search_view"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="@dimen/margin_16"
+                android:imeOptions="actionSearch"
+                android:closeIcon="@drawable/close_icon"
+                android:searchIcon="@drawable/search_icon"
+                android:background="@drawable/white_background_rounded"
+                android:iconifiedByDefault="false"
+                tools:queryHint="Search for a menu item" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
